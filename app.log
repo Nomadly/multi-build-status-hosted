@@ -458,3 +458,6 @@ TypeError: integer argument expected, got float
 [2015-04-09 18:41:19 +0530] [82851] [INFO] Listening at: http://0.0.0.0:5000 (82851)
 [2015-04-09 18:41:19 +0530] [82851] [INFO] Using worker: sync
 [2015-04-09 18:41:19 +0530] [82854] [INFO] Booting worker with pid: 82854
+[2015-04-09 18:45:35 +0530] [82851] [INFO] Handling signal: int
+[2015-04-09 18:45:35 +0530] [82854] [INFO] Worker exiting (pid: 82854)
+[2015-04-09 18:45:35 +0530] [82851] [INFO] Shutting down: Master

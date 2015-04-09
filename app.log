@@ -461,3 +461,118 @@ TypeError: integer argument expected, got float
 [2015-04-09 18:45:35 +0530] [82851] [INFO] Handling signal: int
 [2015-04-09 18:45:35 +0530] [82854] [INFO] Worker exiting (pid: 82854)
 [2015-04-09 18:45:35 +0530] [82851] [INFO] Shutting down: Master
+[2015-04-09 18:59:18 +0530] [83364] [INFO] Starting gunicorn 19.3.0
+[2015-04-09 18:59:18 +0530] [83364] [INFO] Listening at: http://0.0.0.0:5000 (83364)
+[2015-04-09 18:59:18 +0530] [83364] [INFO] Using worker: sync
+[2015-04-09 18:59:18 +0530] [83367] [INFO] Booting worker with pid: 83367
+[2015-04-09 19:00:13 +0530] [83367] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/rohan/projects/multi-build-status-hosted/main.py", line 20, in index
+    except e:
+NameError: global name 'e' is not defined
+[2015-04-09 19:00:57 +0530] [83364] [INFO] Handling signal: int
+[2015-04-09 19:00:57 +0530] [83367] [INFO] Worker exiting (pid: 83367)
+[2015-04-09 19:00:57 +0530] [83364] [INFO] Shutting down: Master
+[2015-04-09 19:01:10 +0530] [83429] [INFO] Starting gunicorn 19.3.0
+[2015-04-09 19:01:10 +0530] [83429] [INFO] Listening at: http://0.0.0.0:5000 (83429)
+[2015-04-09 19:01:10 +0530] [83429] [INFO] Using worker: sync
+[2015-04-09 19:01:10 +0530] [83433] [INFO] Booting worker with pid: 83433
+[2015-04-09 19:04:32 +0530] [83429] [INFO] Handling signal: int
+[2015-04-09 19:04:32 +0530] [83433] [INFO] Worker exiting (pid: 83433)
+[2015-04-09 19:04:32 +0530] [83429] [INFO] Shutting down: Master
+[2015-04-09 19:04:49 +0530] [83474] [INFO] Starting gunicorn 19.3.0
+[2015-04-09 19:04:49 +0530] [83474] [INFO] Listening at: http://0.0.0.0:5000 (83474)
+[2015-04-09 19:04:49 +0530] [83474] [INFO] Using worker: sync
+[2015-04-09 19:04:49 +0530] [83477] [INFO] Booting worker with pid: 83477
+[2015-04-09 19:04:57 +0530] [83474] [INFO] Handling signal: int
+[2015-04-09 19:04:57 +0530] [83477] [INFO] Worker exiting (pid: 83477)
+[2015-04-09 19:04:57 +0530] [83474] [INFO] Shutting down: Master
+[2015-04-09 19:05:08 +0530] [83508] [INFO] Starting gunicorn 19.3.0
+[2015-04-09 19:05:08 +0530] [83508] [INFO] Listening at: http://0.0.0.0:5000 (83508)
+[2015-04-09 19:05:08 +0530] [83508] [INFO] Using worker: sync
+[2015-04-09 19:05:08 +0530] [83511] [INFO] Booting worker with pid: 83511
+[2015-04-09 19:05:12 +0530] [83511] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1577, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/werkzeug/wrappers.py", line 841, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/werkzeug/wrappers.py", line 57, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/werkzeug/test.py", line 867, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'exceptions.NameError' object is not callable
+[2015-04-09 19:05:14 +0530] [83511] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1577, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/werkzeug/wrappers.py", line 841, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/werkzeug/test.py", line 867, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'exceptions.NameError' object is not callable
+[2015-04-09 19:05:15 +0530] [83508] [INFO] Handling signal: int
+[2015-04-09 19:05:15 +0530] [83511] [INFO] Worker exiting (pid: 83511)
+[2015-04-09 19:05:15 +0530] [83508] [INFO] Shutting down: Master
+[2015-04-09 19:05:23 +0530] [83543] [INFO] Starting gunicorn 19.3.0
+[2015-04-09 19:05:23 +0530] [83543] [INFO] Listening at: http://0.0.0.0:5000 (83543)
+[2015-04-09 19:05:23 +0530] [83543] [INFO] Using worker: sync
+[2015-04-09 19:05:23 +0530] [83546] [INFO] Booting worker with pid: 83546
+[2015-04-09 19:05:28 +0530] [83543] [INFO] Handling signal: int
+[2015-04-09 19:05:28 +0530] [83546] [INFO] Worker exiting (pid: 83546)
+[2015-04-09 19:05:28 +0530] [83543] [INFO] Shutting down: Master
+[2015-04-09 19:05:52 +0530] [83578] [INFO] Starting gunicorn 19.3.0
+[2015-04-09 19:05:52 +0530] [83578] [INFO] Listening at: http://0.0.0.0:5000 (83578)
+[2015-04-09 19:05:52 +0530] [83578] [INFO] Using worker: sync
+[2015-04-09 19:05:52 +0530] [83581] [INFO] Booting worker with pid: 83581
+[2015-04-09 19:06:37 +0530] [83578] [INFO] Handling signal: int
+[2015-04-09 19:06:37 +0530] [83581] [INFO] Worker exiting (pid: 83581)
+[2015-04-09 19:06:37 +0530] [83578] [INFO] Shutting down: Master

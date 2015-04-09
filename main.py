@@ -5,9 +5,6 @@ from pygithub3 import Github
 import urllib
 import Image, ImageDraw, ImageFont
 import cStringIO as StringIO
-import logging
-
-logging.basicConfig(level=logging.DEBUG)
 
 app = Flask(__name__)
 imp_branch_bg = (93, 138, 209)
@@ -16,12 +13,12 @@ imp_branches = ["master"]
 @app.route('/<string:cs_uuid>/<string:gh_user>/<string:gh_repo>')
 def index(cs_uuid, gh_user, gh_repo):
     try:
-        return process_req()
-    except e:
+        return process_req(cs_uuid, gh_user, gh_repo)
+    except Exception as e:
         print e
-        return "Error, check console"
+        return str(e)
 
-def process_req():
+def process_req(cs_uuid, gh_user, gh_repo):
     oauth_token = os.environ['GH_TOKEN']
     gh = Github(token=oauth_token)
     branch_pages = gh.repos.list_branches(user=gh_user, repo=gh_repo)

@@ -1,0 +1,258 @@
+[2015-04-09 17:50:16 +0530] [81241] [INFO] Starting gunicorn 19.3.0
+[2015-04-09 17:50:16 +0530] [81241] [INFO] Listening at: http://0.0.0.0:5000 (81241)
+[2015-04-09 17:50:16 +0530] [81241] [INFO] Using worker: sync
+[2015-04-09 17:50:16 +0530] [81244] [INFO] Booting worker with pid: 81244
+[2015-04-09 17:52:34 +0530] [81241] [INFO] Handling signal: int
+[2015-04-09 17:52:34 +0530] [81244] [INFO] Worker exiting (pid: 81244)
+[2015-04-09 17:52:34 +0530] [81241] [INFO] Shutting down: Master
+[2015-04-09 17:52:48 +0530] [81333] [INFO] Starting gunicorn 19.3.0
+[2015-04-09 17:52:48 +0530] [81333] [INFO] Listening at: http://0.0.0.0:5000 (81333)
+[2015-04-09 17:52:48 +0530] [81333] [INFO] Using worker: sync
+[2015-04-09 17:52:49 +0530] [81336] [INFO] Booting worker with pid: 81336
+[2015-04-09 17:53:10 +0530] [81336] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/rohan/projects/multi-build-status-hosted/main.py", line 46, in index
+    font = ImageFont.truetype("opensans.ttf", 13)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/PIL/ImageFont.py", line 218, in truetype
+    return FreeTypeFont(filename, size, index, encoding)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/PIL/ImageFont.py", line 134, in __init__
+    self.font = core.getfont(file, size, index, encoding)
+IOError: cannot open resource
+[2015-04-09 17:53:31 +0530] [81333] [INFO] Handling signal: int
+[2015-04-09 17:53:31 +0530] [81336] [INFO] Worker exiting (pid: 81336)
+[2015-04-09 17:53:31 +0530] [81333] [INFO] Shutting down: Master
+[2015-04-09 17:53:32 +0530] [81396] [INFO] Starting gunicorn 19.3.0
+[2015-04-09 17:53:32 +0530] [81396] [INFO] Listening at: http://0.0.0.0:5000 (81396)
+[2015-04-09 17:53:32 +0530] [81396] [INFO] Using worker: sync
+[2015-04-09 17:53:32 +0530] [81399] [INFO] Booting worker with pid: 81399
+[2015-04-09 17:54:17 +0530] [81396] [INFO] Handling signal: int
+[2015-04-09 17:54:17 +0530] [81399] [INFO] Worker exiting (pid: 81399)
+[2015-04-09 17:54:17 +0530] [81396] [INFO] Shutting down: Master
+[2015-04-09 17:57:23 +0530] [81445] [INFO] Starting gunicorn 19.3.0
+[2015-04-09 17:57:23 +0530] [81445] [INFO] Listening at: http://0.0.0.0:5000 (81445)
+[2015-04-09 17:57:23 +0530] [81445] [INFO] Using worker: sync
+[2015-04-09 17:57:23 +0530] [81448] [INFO] Booting worker with pid: 81448
+[2015-04-09 17:57:45 +0530] [81448] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/rohan/projects/multi-build-status-hosted/main.py", line 58, in index
+    file = StringIO()
+TypeError: 'module' object is not callable
+[2015-04-09 17:57:52 +0530] [81445] [INFO] Handling signal: int
+[2015-04-09 17:57:52 +0530] [81448] [INFO] Worker exiting (pid: 81448)
+[2015-04-09 17:57:52 +0530] [81445] [INFO] Shutting down: Master
+[2015-04-09 17:58:11 +0530] [81481] [INFO] Starting gunicorn 19.3.0
+[2015-04-09 17:58:11 +0530] [81481] [INFO] Listening at: http://0.0.0.0:5000 (81481)
+[2015-04-09 17:58:11 +0530] [81481] [INFO] Using worker: sync
+[2015-04-09 17:58:11 +0530] [81484] [INFO] Booting worker with pid: 81484
+[2015-04-09 17:58:30 +0530] [81484] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/rohan/projects/multi-build-status-hosted/main.py", line 61, in index
+    response = make_response(file)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/helpers.py", line 183, in make_response
+    return current_app.make_response(args)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1577, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/werkzeug/wrappers.py", line 841, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/werkzeug/wrappers.py", line 57, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/werkzeug/test.py", line 867, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'cStringIO.StringO' object is not callable
+[2015-04-09 17:58:33 +0530] [81481] [INFO] Handling signal: int
+[2015-04-09 17:58:33 +0530] [81484] [INFO] Worker exiting (pid: 81484)
+[2015-04-09 17:58:33 +0530] [81481] [INFO] Shutting down: Master
+[2015-04-09 17:59:58 +0530] [81518] [INFO] Starting gunicorn 19.3.0
+[2015-04-09 17:59:58 +0530] [81518] [INFO] Listening at: http://0.0.0.0:5000 (81518)
+[2015-04-09 17:59:58 +0530] [81518] [INFO] Using worker: sync
+[2015-04-09 17:59:58 +0530] [81521] [INFO] Booting worker with pid: 81521
+[2015-04-09 18:00:20 +0530] [81518] [INFO] Handling signal: int
+[2015-04-09 18:00:20 +0530] [81521] [INFO] Worker exiting (pid: 81521)
+[2015-04-09 18:00:20 +0530] [81518] [INFO] Shutting down: Master
+[2015-04-09 18:05:20 +0530] [81582] [INFO] Starting gunicorn 19.3.0
+[2015-04-09 18:05:20 +0530] [81582] [INFO] Listening at: http://0.0.0.0:5000 (81582)
+[2015-04-09 18:05:20 +0530] [81582] [INFO] Using worker: sync
+[2015-04-09 18:05:20 +0530] [81585] [INFO] Booting worker with pid: 81585
+[2015-04-09 18:05:51 +0530] [81585] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/rohan/projects/multi-build-status-hosted/main.py", line 54, in index
+    draw.rectangle([cursor, (img_w - 3*border_x)/2 - border_x, cursor_y + badge.size[1]], imp_branch_bg)
+NameError: global name 'cursor' is not defined
+[2015-04-09 18:05:57 +0530] [81582] [INFO] Handling signal: int
+[2015-04-09 18:05:57 +0530] [81585] [INFO] Worker exiting (pid: 81585)
+[2015-04-09 18:05:57 +0530] [81582] [INFO] Shutting down: Master
+[2015-04-09 18:06:17 +0530] [81618] [INFO] Starting gunicorn 19.3.0
+[2015-04-09 18:06:17 +0530] [81618] [INFO] Listening at: http://0.0.0.0:5000 (81618)
+[2015-04-09 18:06:17 +0530] [81618] [INFO] Using worker: sync
+[2015-04-09 18:06:17 +0530] [81621] [INFO] Booting worker with pid: 81621
+[2015-04-09 18:06:38 +0530] [81621] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/rohan/projects/multi-build-status-hosted/main.py", line 54, in index
+    draw.rectangle([cursor_x, (img_w - 3*border_x)/2 - border_x, cursor_y + badge.size[1]], imp_branch_bg)
+AttributeError: 'tuple' object has no attribute 'size'
+[2015-04-09 18:06:45 +0530] [81618] [INFO] Handling signal: int
+[2015-04-09 18:06:45 +0530] [81621] [INFO] Worker exiting (pid: 81621)
+[2015-04-09 18:06:45 +0530] [81618] [INFO] Shutting down: Master
+[2015-04-09 18:07:02 +0530] [81653] [INFO] Starting gunicorn 19.3.0
+[2015-04-09 18:07:02 +0530] [81653] [INFO] Listening at: http://0.0.0.0:5000 (81653)
+[2015-04-09 18:07:02 +0530] [81653] [INFO] Using worker: sync
+[2015-04-09 18:07:02 +0530] [81656] [INFO] Booting worker with pid: 81656
+[2015-04-09 18:07:34 +0530] [81653] [CRITICAL] WORKER TIMEOUT (pid:81656)
+[2015-04-09 18:07:34 +0530] [81656] [INFO] Worker exiting (pid: 81656)
+[2015-04-09 18:07:34 +0530] [81658] [INFO] Booting worker with pid: 81658
+[2015-04-09 18:08:04 +0530] [81653] [CRITICAL] WORKER TIMEOUT (pid:81658)
+[2015-04-09 18:08:04 +0530] [81658] [INFO] Worker exiting (pid: 81658)
+[2015-04-09 18:08:04 +0530] [81660] [INFO] Booting worker with pid: 81660
+[2015-04-09 18:08:41 +0530] [81653] [CRITICAL] WORKER TIMEOUT (pid:81660)
+[2015-04-09 18:08:41 +0530] [81660] [INFO] Worker exiting (pid: 81660)
+[2015-04-09 18:08:41 +0530] [81665] [INFO] Booting worker with pid: 81665
+[2015-04-09 18:08:45 +0530] [81653] [INFO] Handling signal: int
+[2015-04-09 18:08:45 +0530] [81665] [INFO] Worker exiting (pid: 81665)
+[2015-04-09 18:08:45 +0530] [81653] [INFO] Shutting down: Master
+[2015-04-09 18:09:26 +0530] [81698] [INFO] Starting gunicorn 19.3.0
+[2015-04-09 18:09:26 +0530] [81698] [INFO] Listening at: http://0.0.0.0:5000 (81698)
+[2015-04-09 18:09:26 +0530] [81698] [INFO] Using worker: sync
+[2015-04-09 18:09:26 +0530] [81701] [INFO] Booting worker with pid: 81701
+[2015-04-09 18:09:59 +0530] [81698] [CRITICAL] WORKER TIMEOUT (pid:81701)
+[2015-04-09 18:09:59 +0530] [81701] [INFO] Worker exiting (pid: 81701)
+[2015-04-09 18:09:59 +0530] [81703] [INFO] Booting worker with pid: 81703
+[2015-04-09 18:10:29 +0530] [81698] [CRITICAL] WORKER TIMEOUT (pid:81703)
+[2015-04-09 18:10:29 +0530] [81703] [INFO] Worker exiting (pid: 81703)
+[2015-04-09 18:10:29 +0530] [81705] [INFO] Booting worker with pid: 81705
+[2015-04-09 18:11:40 +0530] [81698] [INFO] Handling signal: int
+[2015-04-09 18:11:40 +0530] [81705] [INFO] Worker exiting (pid: 81705)
+[2015-04-09 18:11:40 +0530] [81698] [INFO] Shutting down: Master
+[2015-04-09 18:11:41 +0530] [81724] [INFO] Starting gunicorn 19.3.0
+[2015-04-09 18:11:41 +0530] [81724] [INFO] Listening at: http://0.0.0.0:5000 (81724)
+[2015-04-09 18:11:41 +0530] [81724] [INFO] Using worker: sync
+[2015-04-09 18:11:41 +0530] [81727] [INFO] Booting worker with pid: 81727
+[2015-04-09 18:12:29 +0530] [81724] [INFO] Handling signal: int
+[2015-04-09 18:12:29 +0530] [81727] [INFO] Worker exiting (pid: 81727)
+[2015-04-09 18:12:29 +0530] [81724] [INFO] Shutting down: Master
+[2015-04-09 18:12:43 +0530] [81777] [INFO] Starting gunicorn 19.3.0
+[2015-04-09 18:12:43 +0530] [81777] [INFO] Listening at: http://0.0.0.0:5000 (81777)
+[2015-04-09 18:12:43 +0530] [81777] [INFO] Using worker: sync
+[2015-04-09 18:12:43 +0530] [81780] [INFO] Booting worker with pid: 81780
+[2015-04-09 18:13:43 +0530] [81777] [INFO] Handling signal: int
+[2015-04-09 18:13:43 +0530] [81780] [INFO] Worker exiting (pid: 81780)
+[2015-04-09 18:13:43 +0530] [81777] [INFO] Shutting down: Master
+[2015-04-09 18:13:53 +0530] [81830] [INFO] Starting gunicorn 19.3.0
+[2015-04-09 18:13:53 +0530] [81830] [INFO] Listening at: http://0.0.0.0:5000 (81830)
+[2015-04-09 18:13:53 +0530] [81830] [INFO] Using worker: sync
+[2015-04-09 18:13:53 +0530] [81833] [INFO] Booting worker with pid: 81833
+[2015-04-09 18:14:30 +0530] [81830] [CRITICAL] WORKER TIMEOUT (pid:81833)
+[2015-04-09 18:14:30 +0530] [81833] [INFO] Worker exiting (pid: 81833)
+[2015-04-09 18:14:30 +0530] [81835] [INFO] Booting worker with pid: 81835
+[2015-04-09 18:15:00 +0530] [81830] [CRITICAL] WORKER TIMEOUT (pid:81835)
+[2015-04-09 18:15:00 +0530] [81835] [INFO] Worker exiting (pid: 81835)
+[2015-04-09 18:15:00 +0530] [81837] [INFO] Booting worker with pid: 81837
+[2015-04-09 18:15:19 +0530] [81830] [INFO] Handling signal: int
+[2015-04-09 18:15:19 +0530] [81837] [INFO] Worker exiting (pid: 81837)
+[2015-04-09 18:15:19 +0530] [81830] [INFO] Shutting down: Master
+[2015-04-09 18:15:40 +0530] [81870] [INFO] Starting gunicorn 19.3.0
+[2015-04-09 18:15:40 +0530] [81870] [INFO] Listening at: http://0.0.0.0:5000 (81870)
+[2015-04-09 18:15:40 +0530] [81870] [INFO] Using worker: sync
+[2015-04-09 18:15:40 +0530] [81873] [INFO] Booting worker with pid: 81873
+[2015-04-09 18:16:11 +0530] [81870] [INFO] Handling signal: int
+[2015-04-09 18:16:11 +0530] [81873] [INFO] Worker exiting (pid: 81873)
+[2015-04-09 18:16:11 +0530] [81870] [INFO] Shutting down: Master

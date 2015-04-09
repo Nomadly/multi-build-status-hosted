@@ -256,3 +256,123 @@ AttributeError: 'tuple' object has no attribute 'size'
 [2015-04-09 18:16:11 +0530] [81870] [INFO] Handling signal: int
 [2015-04-09 18:16:11 +0530] [81873] [INFO] Worker exiting (pid: 81873)
 [2015-04-09 18:16:11 +0530] [81870] [INFO] Shutting down: Master
+[2015-04-09 18:23:35 +0530] [82175] [INFO] Starting gunicorn 19.3.0
+[2015-04-09 18:23:35 +0530] [82175] [INFO] Listening at: http://0.0.0.0:5000 (82175)
+[2015-04-09 18:23:35 +0530] [82175] [INFO] Using worker: sync
+[2015-04-09 18:23:35 +0530] [82178] [INFO] Booting worker with pid: 82178
+[2015-04-09 18:24:07 +0530] [82178] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/rohan/projects/multi-build-status-hosted/main.py", line 57, in index
+    draw.rectangle([cursor_x, (img_w - 3*border_x)/2 - border_x, cursor_y + badge[1].size[1]], imp_branch_bg)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/PIL/ImageDraw.py", line 248, in rectangle
+    self.draw.draw_rectangle(xy, fill, 1)
+ValueError: wrong number of coordinates
+[2015-04-09 18:25:04 +0530] [82175] [INFO] Handling signal: int
+[2015-04-09 18:25:04 +0530] [82178] [INFO] Worker exiting (pid: 82178)
+[2015-04-09 18:25:04 +0530] [82175] [INFO] Shutting down: Master
+[2015-04-09 18:25:31 +0530] [82269] [INFO] Starting gunicorn 19.3.0
+[2015-04-09 18:25:31 +0530] [82269] [INFO] Listening at: http://0.0.0.0:5000 (82269)
+[2015-04-09 18:25:31 +0530] [82269] [INFO] Using worker: sync
+[2015-04-09 18:25:31 +0530] [82272] [INFO] Booting worker with pid: 82272
+[2015-04-09 18:25:56 +0530] [82272] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/rohan/projects/multi-build-status-hosted/main.py", line 57, in index
+    draw.rectangle([cursor_x, ((img_w - 3*border_x)/2 - border_x, cursor_y + badge[1].size[1])], imp_branch_bg)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/PIL/ImageDraw.py", line 248, in rectangle
+    self.draw.draw_rectangle(xy, fill, 1)
+ValueError: wrong number of coordinates
+[2015-04-09 18:26:15 +0530] [82269] [INFO] Handling signal: int
+[2015-04-09 18:26:15 +0530] [82272] [INFO] Worker exiting (pid: 82272)
+[2015-04-09 18:26:15 +0530] [82269] [INFO] Shutting down: Master
+[2015-04-09 18:26:32 +0530] [82305] [INFO] Starting gunicorn 19.3.0
+[2015-04-09 18:26:32 +0530] [82305] [INFO] Listening at: http://0.0.0.0:5000 (82305)
+[2015-04-09 18:26:32 +0530] [82305] [INFO] Using worker: sync
+[2015-04-09 18:26:32 +0530] [82308] [INFO] Booting worker with pid: 82308
+[2015-04-09 18:26:51 +0530] [82308] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/rohan/projects/multi-build-status-hosted/venv/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/rohan/projects/multi-build-status-hosted/main.py", line 57, in index
+    draw.rectangle([(cursor_x, cursory_y), ((img_w - 3*border_x)/2 - border_x, cursor_y + badge[1].size[1])], imp_branch_bg)
+NameError: global name 'cursory_y' is not defined
+[2015-04-09 18:27:11 +0530] [82305] [INFO] Handling signal: int
+[2015-04-09 18:27:11 +0530] [82308] [INFO] Worker exiting (pid: 82308)
+[2015-04-09 18:27:11 +0530] [82305] [INFO] Shutting down: Master
+[2015-04-09 18:27:18 +0530] [82354] [INFO] Starting gunicorn 19.3.0
+[2015-04-09 18:27:18 +0530] [82354] [INFO] Listening at: http://0.0.0.0:5000 (82354)
+[2015-04-09 18:27:18 +0530] [82354] [INFO] Using worker: sync
+[2015-04-09 18:27:18 +0530] [82357] [INFO] Booting worker with pid: 82357
+[2015-04-09 18:27:45 +0530] [82354] [INFO] Handling signal: int
+[2015-04-09 18:27:45 +0530] [82357] [INFO] Worker exiting (pid: 82357)
+[2015-04-09 18:27:45 +0530] [82354] [INFO] Shutting down: Master
+[2015-04-09 18:29:05 +0530] [82394] [INFO] Starting gunicorn 19.3.0
+[2015-04-09 18:29:05 +0530] [82394] [INFO] Listening at: http://0.0.0.0:5000 (82394)
+[2015-04-09 18:29:05 +0530] [82394] [INFO] Using worker: sync
+[2015-04-09 18:29:05 +0530] [82397] [INFO] Booting worker with pid: 82397
+[2015-04-09 18:29:36 +0530] [82394] [CRITICAL] WORKER TIMEOUT (pid:82397)
+[2015-04-09 18:29:36 +0530] [82397] [INFO] Worker exiting (pid: 82397)
+[2015-04-09 18:29:36 +0530] [82399] [INFO] Booting worker with pid: 82399
+[2015-04-09 18:30:06 +0530] [82394] [CRITICAL] WORKER TIMEOUT (pid:82399)
+[2015-04-09 18:30:06 +0530] [82399] [INFO] Worker exiting (pid: 82399)
+[2015-04-09 18:30:06 +0530] [82402] [INFO] Booting worker with pid: 82402
+[2015-04-09 18:30:37 +0530] [82394] [INFO] Handling signal: int
+[2015-04-09 18:30:37 +0530] [82402] [INFO] Worker exiting (pid: 82402)
+[2015-04-09 18:30:37 +0530] [82394] [INFO] Shutting down: Master

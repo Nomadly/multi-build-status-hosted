@@ -78,6 +78,11 @@ def process_req(cs_uuid, gh_user, gh_repo):
     file.seek(0)
     response = make_response(file.read())
     response.headers['Content-type'] = 'image/png'
+    response.headers['Last-Modified'] = datetime.now()
+    response.headers['Cache-Control'] = 'no-store, no-cache, must-revalidate, post-check=0, pre-check=0, max-age=0'
+    response.headers['Pragma'] = 'no-cache'
+    response.headers['Expires'] = '-1' 
+
     return response
 
 app.debug = True

@@ -5,6 +5,9 @@ from pygithub3 import Github
 import urllib
 import Image, ImageDraw, ImageFont
 import cStringIO as StringIO
+import logging
+
+logging.basicConfig(level=logging.DEBUG)
 
 app = Flask(__name__)
 imp_branch_bg = (93, 138, 209)
@@ -49,12 +52,9 @@ def index(cs_uuid, gh_user, gh_repo):
     draw = ImageDraw.Draw(image)
     cursor_x = border_x
     cursor_y = border_y
-    print "??"
     font = ImageFont.truetype("opensans.ttf", 13)
-    print "???"
     text_pad = (badges[0][1].size[1] - 13)/4
 
-    print "????"
     for badge in badges:
         if badge[0] in imp_branches:
             draw.rectangle([(cursor_x, cursor_y), ((img_w - 3*border_x)/2 - border_x, cursor_y + badge[1].size[1])], imp_branch_bg)
@@ -66,7 +66,6 @@ def index(cs_uuid, gh_user, gh_repo):
         cursor_y += badge[1].size[1] + border_y
         cursor_x = border_x
 
-    print "?????"
     file = StringIO.StringIO()
     image.save(file, "PNG")
 

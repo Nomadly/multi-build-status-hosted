@@ -43,21 +43,21 @@ def index(cs_uuid, gh_user, gh_repo):
     for badge in badges:
         img_h += badge[1].size[1] + border_y
 
-    img_w = 2.1*max([x[1].size[0] for x in badges]) + 3*border_x
+    img_w = int(2.1*max([x[1].size[0] for x in badges]) + 3*border_x)
 
     image = Image.new("RGB", (img_w, img_h), "white")
     draw = ImageDraw.Draw(image)
     cursor_x = border_x
     cursor_y = border_y
     font = ImageFont.truetype("opensans.ttf", 13)
-    text_pad = (badges[0][1].size[1] - 13)/2
+    text_pad = (badges[0][1].size[1] - 13)/4
 
     for badge in badges:
         if badge[0] in imp_branches:
             draw.rectangle([(cursor_x, cursor_y), ((img_w - 3*border_x)/2 - border_x, cursor_y + badge[1].size[1])], imp_branch_bg)
 
         draw.text((cursor_x + border_x, cursor_y + text_pad), badge[0], (0, 0, 0), font=font)
-        cursor_x += 1.1*((img_w - 3*border_x)/2)
+        cursor_x += int(1.1*((img_w - 3*border_x)/2))
 
         image.paste(badge[1], (cursor_x, cursor_y))
         cursor_y += badge[1].size[1] + border_y

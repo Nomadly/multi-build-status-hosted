@@ -3,8 +3,10 @@ from flask import make_response
 import os
 from pygithub3 import Github
 import urllib
-import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFont
 import cStringIO as StringIO
+import traceback
+import sys
 
 app = Flask(__name__)
 imp_branch_bg = (93, 138, 209)
@@ -16,7 +18,7 @@ def index(cs_uuid, gh_user, gh_repo):
         return process_req(cs_uuid, gh_user, gh_repo)
     except Exception as e:
         print e
-        return str(e)
+        return str(traceback.format_exc()) + "//" + str(sys.exc_info()[0]) + "//" + str(e)
 
 def process_req(cs_uuid, gh_user, gh_repo):
     oauth_token = os.environ['GH_TOKEN']

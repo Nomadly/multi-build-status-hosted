@@ -15,6 +15,13 @@ imp_branches = ["master"]
 
 @app.route('/<string:cs_uuid>/<string:gh_user>/<string:gh_repo>')
 def index(cs_uuid, gh_user, gh_repo):
+    try:
+        return process_req()
+    except e:
+        print e
+        return "Error, check console"
+
+def process_req():
     oauth_token = os.environ['GH_TOKEN']
     gh = Github(token=oauth_token)
     branch_pages = gh.repos.list_branches(user=gh_user, repo=gh_repo)

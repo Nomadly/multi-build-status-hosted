@@ -4,6 +4,7 @@ import os
 from pygithub3 import Github
 import urllib
 from PIL import Image, ImageDraw, ImageFont
+from datetime import datetime
 import cStringIO as StringIO
 import traceback
 import sys
